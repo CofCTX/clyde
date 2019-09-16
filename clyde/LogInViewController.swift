@@ -17,15 +17,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
     
-    
+    //Presents Sign up view
     @IBAction func GoToSignUp(_ sender: Any) {
         performSegue(withIdentifier: "SegueToSignUp", sender: self)
     }
     
+    //Presents homepage
+    // TO-DO: add a checker to see if the student was authenitcated, if we are not using salesforce community login
     @IBAction func LogIntoAccount(_ sender: UIButton) {
-        
         performSegue(withIdentifier: "SegueToMain", sender: self)
-
     }
     
     
@@ -36,31 +36,14 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
     }
     
     
-    
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        print("Editing is about to begin")
-        return true
-    }
-    
-    
+    // Changes the background color of the textfield when the user begins typing
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        print("Editing began")
     }
     
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        print("Editing is about to end")
-        return true
-    }
-    
+    // Changes the background color and text color of the textfield when the user finishes typing
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("Editing ended")
         textField.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         textField.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        print(textField.text ?? "wELP")
     }
-    
- 
-    
 }

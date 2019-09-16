@@ -1,0 +1,89 @@
+PODS:
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - SalesforceAnalytics (7.1.0):
+    - SalesforceAnalytics/SalesforceAnalytics (= 7.1.0)
+  - SalesforceAnalytics/SalesforceAnalytics (7.1.0):
+    - SalesforceSDKCommon
+  - SalesforceSDKCommon (7.1.0):
+    - SalesforceSDKCommon/SalesforceSDKCommon (= 7.1.0)
+  - SalesforceSDKCommon/SalesforceSDKCommon (7.1.0)
+  - SalesforceSDKCore (7.1.0):
+    - SalesforceSDKCore/SalesforceSDKCore (= 7.1.0)
+  - SalesforceSDKCore/SalesforceSDKCore (7.1.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/arc (= 7.1.0)
+    - SalesforceSDKCore/SalesforceSDKCore/base (= 7.1.0)
+    - SalesforceSDKCore/SalesforceSDKCore/no-arc (= 7.1.0)
+  - SalesforceSDKCore/SalesforceSDKCore/arc (7.1.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/base
+    - SalesforceSDKCore/SalesforceSDKCore/no-arc
+  - SalesforceSDKCore/SalesforceSDKCore/base (7.1.0):
+    - SalesforceAnalytics
+  - SalesforceSDKCore/SalesforceSDKCore/no-arc (7.1.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/base
+  - SearchTextField (1.2.4)
+  - SmartStore (7.1.0):
+    - SmartStore/SmartStore (= 7.1.0)
+  - SmartStore/SmartStore (7.1.0):
+    - FMDB/SQLCipher (~> 2.7.5)
+    - SalesforceSDKCore
+    - SQLCipher/fts (~> 4.0.1)
+  - SmartSync (7.1.0):
+    - SmartSync/SmartSync (= 7.1.0)
+  - SmartSync/SmartSync (7.1.0):
+    - SalesforceSDKCore
+    - SmartStore
+  - SQLCipher (4.0.1):
+    - SQLCipher/standard (= 4.0.1)
+  - SQLCipher/common (4.0.1)
+  - SQLCipher/fts (4.0.1):
+    - SQLCipher/common
+  - SQLCipher/standard (4.0.1):
+    - SQLCipher/common
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - SalesforceAnalytics (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SalesforceSDKCommon (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SalesforceSDKCore (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SearchTextField
+  - SmartStore (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SmartSync (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
+    - SearchTextField
+    - SQLCipher
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SalesforceAnalytics:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SalesforceSDKCommon:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SalesforceSDKCore:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SmartStore:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SmartSync:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SalesforceAnalytics: d209ca61ff08212f31c404f8b07fe0e3b16dfe40
+  SalesforceSDKCommon: a8a763aef796a9c9dfa21cea2521b8782534c4c8
+  SalesforceSDKCore: be30729df30d3c2d2fafe71b34e6e24d7c79409a
+  SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  SmartStore: f176baeb2a3e092daa803c590632b529ff9d35d0
+  SmartSync: cb418d12e1a20631cbd3c95cb0bcde39b21dca5c
+  SQLCipher: 4636a257060f6f1b4e143a143028b61a2b462d0d
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 79964aaaa8c044620be2b73201a3c2e6a328d522
+
+COCOAPODS: 1.6.0

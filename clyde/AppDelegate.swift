@@ -25,16 +25,20 @@
 import Foundation
 import UIKit
 import SalesforceSDKCore
+import SmartSync
+import SwiftyJSON
 
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate : UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
-    
-    
-    //Initializes the Mobile SDK and registers a block to handle user change notifications.
-    override init() {
+    override
+    init()
+    {
         super.init()
-        SalesforceManager.initializeSDK()
+        SmartSyncSDKManager.initializeSDK()
+        
+        SmartSyncSDKManager.shared.setupUserStoreFromDefaultConfig()
+        SmartSyncSDKManager.shared.setupUserSyncsFromDefaultConfig()
         AuthHelper.registerBlock(forCurrentUserChangeNotifications: { [weak self] in
             self?.resetViewState {
                 self?.setupRootViewController()
@@ -44,61 +48,87 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // MARK: - App delegate lifecycle
-    //After iOS finishes launching the app, this method is called.
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        //SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
+        self.initializeAppViewState()
         
-        //Uncomment the code below to see how you can customize the color, textcolor, font and fontsize of the navigation bar
+        // If you wish to register for push notifications, uncomment the line below.  Note that,
+        // if you want to receive push notifications from Salesforce, you will also need to
+        // implement the application:didRegisterForRemoteNotificationsWithDeviceToken: method (below).
+        //
+        // SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
+        
+        //Uncomment the code below to see how you can customize the color, textcolor,
+        //font and fontsize of the navigation bar
         let loginViewConfig = SalesforceLoginViewControllerConfig()
         
-        //Set showSettingsIcon to NO if you want to hide the settings icon on the nav bar
-        //loginViewConfig.showsSettingsIcon = false
+        //Set showSettingsIcon to false if you want to hide the settings
+        //icon on the nav bar
+        loginViewConfig.showsSettingsIcon = false
         
-        //Set showNavBar to NO if you want to hide the top bar
-        //loginViewConfig.showsNavigationBar = false
-        
-        //loginViewConfig.navBarColor = UIColor(red: 0.051, green: 0.765, blue: 0.733, alpha: 1.0)
-        //loginViewConfig.navBarTextColor = UIColor.white
-        //loginViewConfig.navBarFont = UIFont(name: "Helvetica", size: 16.0)
-        
+        //Set showNavBar to false if you want to hide the top bar
+        loginViewConfig.showsNavigationBar = false
+        //loginViewConfig.navigationBarColor = UIColor(red: 0.051, green: 0.765, blue: 0.733, alpha: 1.0)
+        //loginViewConfig.navigationBarTextColor = UIColor.white
+        //loginViewConfig.navigationBarFont = UIFont(name: "Helvetica", size: 16.0)
         UserAccountManager.shared.loginViewControllerConfig = loginViewConfig
-        
-        AuthHelper.loginIfRequired {
-            self.setupRootViewController()
+        AuthHelper.loginIfRequired { [weak self] in
+            self?.setupRootViewController()
         }
+        
         
         return true
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        
-        SFPushNotificationManager.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
-        if (UserAccountManager.shared.currentUserAccount?.credentials.accessToken != nil) {
-            SFPushNotificationManager.sharedInstance().registerSalesforceNotifications(completionBlock: nil, fail: nil)
-        }
+        //
+        // Uncomment the code below to register your device token with the push notification manager
+        //
+        //
+        // SFPushNotificationManager.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
+        // if (UserAccountManager.shared.currentUserAccount?.credentials.accessToken != nil)
+        // {
+        //     SFPushNotificationManager.sharedInstance().registerSalesforceNotifications(completionBlock: nil, fail: nil)
+        // }
     }
+    
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error ) {
         // Respond to any push notification registration errors here.
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey
+        : Any] = [:]) -> Bool {
         // Uncomment following block to enable IDP Login flow
-        //return  UserAccountManager.sharedInstance().handleIDPAuthenticationResponse(url, options: options)
-        return false
+        // return  UserAccountManager.shared.handleIdentityProviderResponse(from: url, with: options)
+        return false;
     }
     
-    //Sets up the root view controller after launch
+    // MARK: - Private methods
+    func initializeAppViewState() {
+        if (!Thread.isMainThread) {
+            DispatchQueue.main.async {
+                self.initializeAppViewState()
+            }
+            return
+        }
+        
+        self.window!.rootViewController = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateInitialViewController()
+        self.window?.makeKeyAndVisible()
+    }
+    
     func setupRootViewController() {
         self.window!.rootViewController = UIStoryboard(name: "Main", bundle: nil)
             .instantiateInitialViewController()
-        self.window!.makeKeyAndVisible()
+        
+//      let rootVC = SWRevealViewController(nibName: nil, bundle: nil)
+//       let navVC = UINavigationController(rootViewController: rootVC)
+//        self.window?.rootViewController = navVC
     }
     
-    
-    func resetViewState(_ postResetBlock: @escaping () -> Void) {
-        if let rootViewController = self.window!.rootViewController {
+    func resetViewState(_ postResetBlock: @escaping () -> ()) {
+        if let rootViewController = self.window?.rootViewController {
             if let _ = rootViewController.presentedViewController {
                 rootViewController.dismiss(animated: false, completion: postResetBlock)
                 return
@@ -106,6 +136,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         postResetBlock()
     }
-    
     
 }

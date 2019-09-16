@@ -1,0 +1,18 @@
+{
+    "syncs": [
+      {
+        "syncName": "syncDownContact",
+        "syncType": "syncDown",
+        "soupName": "Contact",
+        "target": {"type":"soql", "query":"SELECT Id, MailingStreet, MailingCity, MailingPostalCode, MailingState, MobilePhone, Email, Name, Text_Message_Consent__c, Birthdate, TargetX_SRMb__Gender__c, TargetX_SRMb__Student_Type__c, Gender_Identity__c, Ethnicity_Non_Applicants__c,TargetX_SRMb__Graduation_Year__c, Honors_College_Interest_Check__c,Status_Category__c, First_Login__c, LastModifiedDate FROM Contact"},
+        "options": {"mergeMode":"OVERWRITE"} 
+      },
+      {
+        "syncName": "syncUpContact",
+        "syncType": "syncUp",
+        "soupName": "Contact",
+        "target": {"updateFieldlist":["MailingStreet", "MailingCity", "MailingPostalCode", "MailingState", "MobilePhone", "Email", "Name", "Text_Message_Consent__c", "TargetX_SRMb__Anticipated_Major__c", "Birthdate", "TargetX_SRMb__Gender__c", "TargetX_SRMb__Student_Type__c", "First_Login__c", "Gender_Identity__c", "Ethnicity_Non_Applicants__c", "LastModifiedDate","TargetX_SRMb__Graduation_Year__c", "Id", "Honors_College_Interest_Check__c"]},
+        "options":{"mergeMode":"LEAVE_IF_CHANGED"}
+      }
+    ]
+  }

@@ -9,7 +9,6 @@
 import Foundation
 import SalesforceSDKCore
 
-
 protocol LogInDataSourceDelegate: AnyObject {
     
 
@@ -18,7 +17,7 @@ protocol LogInDataSourceDelegate: AnyObject {
     
 }
 
-
+//THIS IS NOT CURRENTLY BEING USED.
 class LogInDataSource: NSObject {
     
     let soqlQuery: String

@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+
+
+//NOT CURRENTLY IN USE
 private var ActivityIndicatorViewAssociateKey = "ActivityIndicatorViewAssociateKey"
 
 extension UIView{

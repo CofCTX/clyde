@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>remoteAccessConsumerKey</key>
-	<string>3MVG98dostKihXN65VZ3l_hz2l9ebnWvKhci5zVujmy0BPLS67Tj_nbpgqgviv8MTpxR4riiQHsfAcLPCRWA5</string>
+	<string>3MVG9Z8h6Bxz0zc4iGJzYY6LC4gqPHF0krJQiKeRJP54DQqEx_kts0KyCQR69wqGW98TphCgLSpo5hquAj4TR</string>
 	<key>oauthRedirectURI</key>
-	<string>cofcapp://oauth/done</string>
+	<string>cofcapppartial://oauth/done</string>
 	<key>oauthScopes</key>
 	<array>
 		<string>web</string>

@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		4F393A291C3C8BCD00B3EA13 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F393A281C3C8BCD00B3EA13 /* main.swift */; };
 		4FD6C47A1B754AF1002F9F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */; };
-		4FD6C4A01B755242002F9F90 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD6C49D1B755242002F9F90 /* InitialViewController.swift */; };
 		78A235BD93AB7D080D67CD51 /* Pods_clyde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A29C75280BDF73123F14B4 /* Pods_clyde.framework */; };
+		B2211D3B22F2018B00D127DB /* whiteLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B2211D3A22F2018B00D127DB /* whiteLogo.png */; };
+		B2211D3D22F8635200D127DB /* clydeWantsToKnow.png in Resources */ = {isa = PBXBuildFile; fileRef = B2211D3C22F8635100D127DB /* clydeWantsToKnow.png */; };
+		B2211D3F22F868D700D127DB /* clyde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2211D3E22F868D700D127DB /* clyde.jpg */; };
+		B2211D4122F868DC00D127DB /* clyde-pineapples.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2211D4022F868DB00D127DB /* clyde-pineapples.jpg */; };
+		B2211D4422F872F800D127DB /* InfoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2211D4322F872F800D127DB /* InfoPopUpViewController.swift */; };
 		B227D07522BBD80900AA0634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B227D07422BBD80900AA0634 /* Main.storyboard */; };
 		B227D08422BBD87600AA0634 /* white-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B227D07B22BBD87600AA0634 /* white-logo.png */; };
 		B227D08522BBD87600AA0634 /* icons8-Thumbnails.png in Resources */ = {isa = PBXBuildFile; fileRef = B227D07C22BBD87600AA0634 /* icons8-Thumbnails.png */; };
@@ -21,27 +25,42 @@
 		B227D08A22BBD87600AA0634 /* icons8-FAQ.png in Resources */ = {isa = PBXBuildFile; fileRef = B227D08122BBD87600AA0634 /* icons8-FAQ.png */; };
 		B227D08B22BBD87600AA0634 /* icons8-Vertical Settings Mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = B227D08222BBD87600AA0634 /* icons8-Vertical Settings Mixer.png */; };
 		B227D08C22BBD87600AA0634 /* icons8-Online Support.png in Resources */ = {isa = PBXBuildFile; fileRef = B227D08322BBD87600AA0634 /* icons8-Online Support.png */; };
-		B227D09B22BBD92F00AA0634 /* RestClient + Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D09722BBD92F00AA0634 /* RestClient + Student.swift */; };
-		B227D09C22BBD92F00AA0634 /* SignUpExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D09822BBD92F00AA0634 /* SignUpExtension.swift */; };
-		B227D09D22BBD92F00AA0634 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D09922BBD92F00AA0634 /* SignUpViewController.swift */; };
-		B227D09E22BBD92F00AA0634 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D09A22BBD92F00AA0634 /* UIView.swift */; };
-		B227D0A122BBD93A00AA0634 /* LogInDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D09F22BBD93A00AA0634 /* LogInDataSource.swift */; };
-		B227D0A222BBD93A00AA0634 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0A022BBD93A00AA0634 /* LogInViewController.swift */; };
 		B227D0A722BBD94500AA0634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0A322BBD94400AA0634 /* ViewController.swift */; };
 		B227D0A822BBD94500AA0634 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B227D0A522BBD94400AA0634 /* SWRevealViewController.m */; };
 		B227D0A922BBD94500AA0634 /* SlideInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0A622BBD94500AA0634 /* SlideInTableViewController.swift */; };
 		B227D0AB22BBE58200AA0634 /* CounselorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0AA22BBE58200AA0634 /* CounselorViewController.swift */; };
-		B227D0AF22BBEAE000AA0634 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0AE22BBEAE000AA0634 /* EventsViewController.swift */; };
 		B227D0B222BBEB0600AA0634 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0B122BBEB0600AA0634 /* ProfileViewController.swift */; };
 		B227D0B522BBEB9A00AA0634 /* MajorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0B422BBEB9A00AA0634 /* MajorsViewController.swift */; };
 		B227D0B822BBEC2100AA0634 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0B722BBEC2100AA0634 /* QuestionsViewController.swift */; };
-		B227D0BA22BBF48200AA0634 /* CounselorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B227D0B922BBF48200AA0634 /* CounselorDataSource.swift */; };
+		B230DD4022E9FACB005674B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B230DD3F22E9FACB005674B4 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B230DD4522EA04E7005674B4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B230DD4422EA04E7005674B4 /* Reachability.m */; };
+		B2358DD822CFAFDF00E00348 /* icons8-Logout Rounded.png in Resources */ = {isa = PBXBuildFile; fileRef = B2358DD722CFAFDE00E00348 /* icons8-Logout Rounded.png */; };
+		B2358DDC22D3A7F800E00348 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2358DDB22D3A7F800E00348 /* MapKit.framework */; };
+		B23C492322D3D75600A88C48 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = B23C492222D3D75500A88C48 /* cal.png */; };
+		B23C492522D3D9F800A88C48 /* cistern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B23C492422D3D9F800A88C48 /* cistern.jpg */; };
+		B2679AB922D63CCC003CCA27 /* CheckInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2679AB822D63CCC003CCA27 /* CheckInTableViewController.swift */; };
+		B26924872301E39500C480EF /* icons8-thumbs-up-100.png in Resources */ = {isa = PBXBuildFile; fileRef = B26924862301E39500C480EF /* icons8-thumbs-up-100.png */; };
+		B269248B2301E4DB00C480EF /* thumbsDown.png in Resources */ = {isa = PBXBuildFile; fileRef = B269248A2301E4DB00C480EF /* thumbsDown.png */; };
+		B269248D2301E51400C480EF /* sideThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = B269248C2301E51300C480EF /* sideThumb.png */; };
+		B27609FF22CA4FD400A122F7 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27609FE22CA4FD300A122F7 /* user.swift */; };
+		B2760A0122CA8FD400A122F7 /* icons8-Org Unit.png in Resources */ = {isa = PBXBuildFile; fileRef = B2760A0022CA8FD200A122F7 /* icons8-Org Unit.png */; };
+		B2760A0422CA949800A122F7 /* ResourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2760A0322CA949800A122F7 /* ResourcesTableViewController.swift */; };
+		B2760A0622CA95B700A122F7 /* banner037.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2760A0522CA95B700A122F7 /* banner037.jpg */; };
+		B28847542329766200811638 /* usersyncs.json in Resources */ = {isa = PBXBuildFile; fileRef = B28847522329766100811638 /* usersyncs.json */; };
+		B28847552329766200811638 /* userstore.json in Resources */ = {isa = PBXBuildFile; fileRef = B28847532329766100811638 /* userstore.json */; };
+		B28E066422C3A0FE0035A40F /* icons8-tick-box-100.png in Resources */ = {isa = PBXBuildFile; fileRef = B28E066322C3A0FE0035A40F /* icons8-tick-box-100.png */; };
+		B28E066622C3A1EF0035A40F /* icons8-close-window-100.png in Resources */ = {isa = PBXBuildFile; fileRef = B28E066522C3A1EF0035A40F /* icons8-close-window-100.png */; };
+		B28E066822C3A2680035A40F /* icons8-help-100.png in Resources */ = {isa = PBXBuildFile; fileRef = B28E066722C3A2670035A40F /* icons8-help-100.png */; };
+		B28E066A22C3A7C80035A40F /* 2016-Orientation-750x499.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28E066922C3A7C70035A40F /* 2016-Orientation-750x499.jpg */; };
+		B28E066C22C3AC270035A40F /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28E066B22C3AC270035A40F /* EventsTableViewController.swift */; };
+		B2B44D8C23102E0C00FC1498 /* EventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B44D8B23102E0C00FC1498 /* EventsDataSource.swift */; };
+		B2B44D8E231031BF00FC1498 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B44D8D231031BE00FC1498 /* EventDetailViewController.swift */; };
+		B2B44D90231053AC00FC1498 /* Clyde-Campus-Tour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2B44D8F231053AB00FC1498 /* Clyde-Campus-Tour.jpg */; };
+		B2B44D9F232697DC00FC1498 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B44D9E232697DC00FC1498 /* EditProfileViewController.swift */; };
 		B2C19FF422BC17E400C5634C /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C19FF322BC17E300C5634C /* images.png */; };
 		B2C19FF622BD338F00C5634C /* icons8-Details Popup.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C19FF522BD338F00C5634C /* icons8-Details Popup.png */; };
 		B2C19FF822BD34D300C5634C /* icons8-Maintenance.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C19FF722BD34D200C5634C /* icons8-Maintenance.png */; };
 		B2C19FFA22BD36AC00C5634C /* icons8-iOS Photos.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C19FF922BD36AC00C5634C /* icons8-iOS Photos.png */; };
-		B2C19FFD22BD411200C5634C /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C19FFC22BD411200C5634C /* CheckInViewController.swift */; };
-		B2C1A00322BD5D2600C5634C /* pass.json in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A00222BD5D2600C5634C /* pass.json */; };
 		B2C1A00D22C15A7600C5634C /* acaslonpro-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B227D09122BBD8BB00AA0634 /* acaslonpro-bold.otf */; };
 		B2C1A00E22C15A7A00C5634C /* acaslonpro-bolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B227D09222BBD8BB00AA0634 /* acaslonpro-bolditalic.otf */; };
 		B2C1A00F22C15A7A00C5634C /* acaslonpro-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B227D09022BBD8BB00AA0634 /* acaslonpro-italic.otf */; };
@@ -55,11 +74,15 @@
 		B2C1A02122C27A8B00C5634C /* cofc-campus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A02022C27A8B00C5634C /* cofc-campus.jpg */; };
 		B2C1A02822C27BAE00C5634C /* full-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A02722C27BAE00C5634C /* full-logo.jpg */; };
 		B2C1A02A22C27C4200C5634C /* red-symbol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A02922C27C4200C5634C /* red-symbol.jpg */; };
-		B2C1A02C22C2866C00C5634C /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C1A02B22C2866C00C5634C /* LaunchViewController.swift */; };
 		B2C1A03422C28D9A00C5634C /* cofc-campusE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A03322C28D9900C5634C /* cofc-campusE.jpg */; };
 		B2C1A03622C29B9B00C5634C /* Clyde-Cistern-profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A03522C29B9B00C5634C /* Clyde-Cistern-profile.jpg */; };
 		B2C1A03822C2A00700C5634C /* cisternyard_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A03722C2A00700C5634C /* cisternyard_splash.jpg */; };
 		B2C1A03A22C395DB00C5634C /* accounting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2C1A03922C395DA00C5634C /* accounting.jpg */; };
+		B2D8013622D78D0D0050E376 /* F.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D8013522D78D0D0050E376 /* F.png */; };
+		B2D8013822D7A6810050E376 /* icons8-Installing Updates.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D8013722D7A6800050E376 /* icons8-Installing Updates.png */; };
+		B2D8013B22D7A8250050E376 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8013A22D7A8250050E376 /* GamesViewController.swift */; };
+		B2D8013D22D8F9230050E376 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8013C22D8F9230050E376 /* extensions.swift */; };
+		B2D8013F22D8FC430050E376 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D8013E22D8FC430050E376 /* instagram.png */; };
 		B7168FBC1FACC6F900A48DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */; };
 		B77BD8A321125B510036B284 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8A221125B510036B284 /* bootconfig.plist */; };
 		CEA8CA041F071B2300448B51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA8CA031F071B2300448B51 /* Images.xcassets */; };
@@ -72,10 +95,14 @@
 		4FD6C4781B754AF1002F9F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FD6C49A1B755242002F9F90 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		4FD6C49D1B755242002F9F90 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		4FF12F8A1DCA91F5004D9EF9 /* clyde.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clyde.entitlements; sourceTree = "<group>"; };
 		762732C14CFE40A989C3AD70 /* Pods-clyde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clyde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clyde/Pods-clyde.debug.xcconfig"; sourceTree = "<group>"; };
 		82A29C75280BDF73123F14B4 /* Pods_clyde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clyde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2211D3A22F2018B00D127DB /* whiteLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteLogo.png; sourceTree = "<group>"; };
+		B2211D3C22F8635100D127DB /* clydeWantsToKnow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clydeWantsToKnow.png; sourceTree = "<group>"; };
+		B2211D3E22F868D700D127DB /* clyde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clyde.jpg; sourceTree = "<group>"; };
+		B2211D4022F868DB00D127DB /* clyde-pineapples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "clyde-pineapples.jpg"; sourceTree = "<group>"; };
+		B2211D4322F872F800D127DB /* InfoPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopUpViewController.swift; sourceTree = "<group>"; };
 		B227D07422BBD80900AA0634 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B227D07B22BBD87600AA0634 /* white-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-logo.png"; sourceTree = "<group>"; };
 		B227D07C22BBD87600AA0634 /* icons8-Thumbnails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Thumbnails.png"; sourceTree = "<group>"; };
@@ -92,28 +119,44 @@
 		B227D09022BBD8BB00AA0634 /* acaslonpro-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "acaslonpro-italic.otf"; sourceTree = "<group>"; };
 		B227D09122BBD8BB00AA0634 /* acaslonpro-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "acaslonpro-bold.otf"; sourceTree = "<group>"; };
 		B227D09222BBD8BB00AA0634 /* acaslonpro-bolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "acaslonpro-bolditalic.otf"; sourceTree = "<group>"; };
-		B227D09722BBD92F00AA0634 /* RestClient + Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestClient + Student.swift"; sourceTree = "<group>"; };
-		B227D09822BBD92F00AA0634 /* SignUpExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpExtension.swift; sourceTree = "<group>"; };
-		B227D09922BBD92F00AA0634 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		B227D09A22BBD92F00AA0634 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		B227D09F22BBD93A00AA0634 /* LogInDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInDataSource.swift; sourceTree = "<group>"; };
-		B227D0A022BBD93A00AA0634 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		B227D0A322BBD94400AA0634 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B227D0A422BBD94400AA0634 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B227D0A522BBD94400AA0634 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B227D0A622BBD94500AA0634 /* SlideInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInTableViewController.swift; sourceTree = "<group>"; };
 		B227D0AA22BBE58200AA0634 /* CounselorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounselorViewController.swift; sourceTree = "<group>"; };
-		B227D0AE22BBEAE000AA0634 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		B227D0B122BBEB0600AA0634 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B227D0B422BBEB9A00AA0634 /* MajorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorsViewController.swift; sourceTree = "<group>"; };
 		B227D0B722BBEC2100AA0634 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
-		B227D0B922BBF48200AA0634 /* CounselorDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounselorDataSource.swift; sourceTree = "<group>"; };
+		B230DD3F22E9FACB005674B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B230DD4222E9FB60005674B4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../Downloads/Reachability-master/Reachability.h"; sourceTree = "<group>"; };
+		B230DD4422EA04E7005674B4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../Downloads/Reachability-master/Reachability.m"; sourceTree = "<group>"; };
+		B2358DD722CFAFDE00E00348 /* icons8-Logout Rounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Logout Rounded.png"; sourceTree = "<group>"; };
+		B2358DDB22D3A7F800E00348 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B23C492222D3D75500A88C48 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal.png; sourceTree = "<group>"; };
+		B23C492422D3D9F800A88C48 /* cistern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cistern.jpg; sourceTree = "<group>"; };
+		B2679AB822D63CCC003CCA27 /* CheckInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInTableViewController.swift; sourceTree = "<group>"; };
+		B26924862301E39500C480EF /* icons8-thumbs-up-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-thumbs-up-100.png"; sourceTree = "<group>"; };
+		B269248A2301E4DB00C480EF /* thumbsDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsDown.png; sourceTree = "<group>"; };
+		B269248C2301E51300C480EF /* sideThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideThumb.png; sourceTree = "<group>"; };
+		B27609FE22CA4FD300A122F7 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		B2760A0022CA8FD200A122F7 /* icons8-Org Unit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Org Unit.png"; sourceTree = "<group>"; };
+		B2760A0322CA949800A122F7 /* ResourcesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewController.swift; sourceTree = "<group>"; };
+		B2760A0522CA95B700A122F7 /* banner037.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner037.jpg; sourceTree = "<group>"; };
+		B28847522329766100811638 /* usersyncs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = usersyncs.json; sourceTree = "<group>"; };
+		B28847532329766100811638 /* userstore.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userstore.json; sourceTree = "<group>"; };
+		B28E066322C3A0FE0035A40F /* icons8-tick-box-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-tick-box-100.png"; sourceTree = "<group>"; };
+		B28E066522C3A1EF0035A40F /* icons8-close-window-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-close-window-100.png"; sourceTree = "<group>"; };
+		B28E066722C3A2670035A40F /* icons8-help-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-help-100.png"; sourceTree = "<group>"; };
+		B28E066922C3A7C70035A40F /* 2016-Orientation-750x499.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2016-Orientation-750x499.jpg"; sourceTree = "<group>"; };
+		B28E066B22C3AC270035A40F /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		B2B44D8B23102E0C00FC1498 /* EventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataSource.swift; sourceTree = "<group>"; };
+		B2B44D8D231031BE00FC1498 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		B2B44D8F231053AB00FC1498 /* Clyde-Campus-Tour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Clyde-Campus-Tour.jpg"; path = "../../Desktop/College of Charleston/Images/Clyde-Campus-Tour.jpg"; sourceTree = "<group>"; };
+		B2B44D9E232697DC00FC1498 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		B2C19FF322BC17E300C5634C /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		B2C19FF522BD338F00C5634C /* icons8-Details Popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Details Popup.png"; sourceTree = "<group>"; };
 		B2C19FF722BD34D200C5634C /* icons8-Maintenance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Maintenance.png"; sourceTree = "<group>"; };
 		B2C19FF922BD36AC00C5634C /* icons8-iOS Photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-iOS Photos.png"; sourceTree = "<group>"; };
-		B2C19FFC22BD411200C5634C /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
-		B2C1A00222BD5D2600C5634C /* pass.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pass.json; sourceTree = "<group>"; };
 		B2C1A01322C15E8200C5634C /* Clyde-Cistern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clyde-Cistern.jpg"; sourceTree = "<group>"; };
 		B2C1A01A22C25B9B00C5634C /* charleston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleston.jpg; sourceTree = "<group>"; };
 		B2C1A01C22C2682200C5634C /* basketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basketball.jpg; sourceTree = "<group>"; };
@@ -122,11 +165,15 @@
 		B2C1A02622C27B8B00C5634C /* three-dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "three-dots.png"; path = "../../Downloads/three-dots.png"; sourceTree = "<group>"; };
 		B2C1A02722C27BAE00C5634C /* full-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "full-logo.jpg"; sourceTree = "<group>"; };
 		B2C1A02922C27C4200C5634C /* red-symbol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-symbol.jpg"; sourceTree = "<group>"; };
-		B2C1A02B22C2866C00C5634C /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		B2C1A03322C28D9900C5634C /* cofc-campusE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "cofc-campusE.jpg"; path = "../../Desktop/College of Charleston/Images/cofc-campusE.jpg"; sourceTree = "<group>"; };
 		B2C1A03522C29B9B00C5634C /* Clyde-Cistern-profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clyde-Cistern-profile.jpg"; sourceTree = "<group>"; };
 		B2C1A03722C2A00700C5634C /* cisternyard_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cisternyard_splash.jpg; sourceTree = "<group>"; };
 		B2C1A03922C395DA00C5634C /* accounting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accounting.jpg; sourceTree = "<group>"; };
+		B2D8013522D78D0D0050E376 /* F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = F.png; sourceTree = "<group>"; };
+		B2D8013722D7A6800050E376 /* icons8-Installing Updates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Installing Updates.png"; sourceTree = "<group>"; };
+		B2D8013A22D7A8250050E376 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		B2D8013C22D8F9230050E376 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		B2D8013E22D8FC430050E376 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../mobile_sdk/SalesforceMobileSDK-iOS/shared/resources/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B77BD8A221125B510036B284 /* bootconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bootconfig.plist; sourceTree = "<group>"; };
 		CEA8CA031F071B2300448B51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "mobile_sdk/SalesforceMobileSDK-iOS/shared/resources/Images.xcassets"; sourceTree = SOURCE_ROOT; };
@@ -137,6 +184,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B230DD4022E9FACB005674B4 /* SystemConfiguration.framework in Frameworks */,
+				B2358DDC22D3A7F800E00348 /* MapKit.framework in Frameworks */,
 				78A235BD93AB7D080D67CD51 /* Pods_clyde.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +196,8 @@
 		4FD6C46B1B754AF1002F9F90 = {
 			isa = PBXGroup;
 			children = (
+				B28847532329766100811638 /* userstore.json */,
+				B28847522329766100811638 /* usersyncs.json */,
 				4FD6C4761B754AF1002F9F90 /* clyde */,
 				4FD6C4751B754AF1002F9F90 /* Products */,
 				DDFDDF0A29E4BDD114B51BBC /* Pods */,
@@ -165,22 +216,22 @@
 		4FD6C4761B754AF1002F9F90 /* clyde */ = {
 			isa = PBXGroup;
 			children = (
-				B2C1A00422BD5D3E00C5634C /* Pass */,
+				B27609FE22CA4FD300A122F7 /* user.swift */,
 				4FD6C4791B754AF1002F9F90 /* AppDelegate.swift */,
-				4FD6C49D1B755242002F9F90 /* InitialViewController.swift */,
 				B227D07422BBD80900AA0634 /* Main.storyboard */,
-				B227D09622BBD91B00AA0634 /* Sign In */,
-				B227D09522BBD90D00AA0634 /* Log In */,
-				B227D09422BBD90400AA0634 /* Sign Up */,
+				B2D8013C22D8F9230050E376 /* extensions.swift */,
+				B2211D4222F872C000D127DB /* Pop Up */,
+				B2C1A01522C24FF700C5634C /* Homepage */,
 				B227D0B022BBEAF200AA0634 /* Profile */,
 				B227D0B322BBEB8200AA0634 /* Majors */,
 				B227D0AC22BBE5E900AA0634 /* Counselor */,
 				B227D0AD22BBEABD00AA0634 /* Events */,
 				B2C19FFB22BD40DF00C5634C /* Check-In */,
+				B2D8013922D7A8010050E376 /* Games */,
 				B227D0B622BBEC0600AA0634 /* Questions */,
+				B2760A0222CA947100A122F7 /* Resources */,
 				B227D09322BBD8F300AA0634 /* Menu Bar */,
-				B2C1A01522C24FF700C5634C /* Homepage */,
-				B227D07822BBD84C00AA0634 /* Resources */,
+				B227D07822BBD84C00AA0634 /* Assets */,
 				4FD6C4771B754AF1002F9F90 /* Supporting Files */,
 			);
 			path = clyde;
@@ -192,6 +243,8 @@
 				4F393A281C3C8BCD00B3EA13 /* main.swift */,
 				4FF12F8A1DCA91F5004D9EF9 /* clyde.entitlements */,
 				B77BD8A221125B510036B284 /* bootconfig.plist */,
+				B230DD4422EA04E7005674B4 /* Reachability.m */,
+				B230DD4222E9FB60005674B4 /* Reachability.h */,
 				4FD6C49A1B755242002F9F90 /* Bridging-Header.h */,
 				B7168FBB1FACC6F900A48DB5 /* LaunchScreen.storyboard */,
 				CEA8CA031F071B2300448B51 /* Images.xcassets */,
@@ -203,18 +256,28 @@
 		6B868AEB1ACA7FCA4636C7F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B230DD3F22E9FACB005674B4 /* SystemConfiguration.framework */,
+				B2358DDB22D3A7F800E00348 /* MapKit.framework */,
 				82A29C75280BDF73123F14B4 /* Pods_clyde.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B227D07822BBD84C00AA0634 /* Resources */ = {
+		B2211D4222F872C000D127DB /* Pop Up */ = {
+			isa = PBXGroup;
+			children = (
+				B2211D4322F872F800D127DB /* InfoPopUpViewController.swift */,
+			);
+			name = "Pop Up";
+			sourceTree = "<group>";
+		};
+		B227D07822BBD84C00AA0634 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				B227D07A22BBD85F00AA0634 /* Fonts */,
 				B227D07922BBD85900AA0634 /* Images */,
 			);
-			name = Resources;
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		B227D07922BBD85900AA0634 /* Images */ = {
@@ -251,39 +314,10 @@
 			name = "Menu Bar";
 			sourceTree = "<group>";
 		};
-		B227D09422BBD90400AA0634 /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				B227D09822BBD92F00AA0634 /* SignUpExtension.swift */,
-				B227D09922BBD92F00AA0634 /* SignUpViewController.swift */,
-				B227D09A22BBD92F00AA0634 /* UIView.swift */,
-			);
-			name = "Sign Up";
-			sourceTree = "<group>";
-		};
-		B227D09522BBD90D00AA0634 /* Log In */ = {
-			isa = PBXGroup;
-			children = (
-				B227D09722BBD92F00AA0634 /* RestClient + Student.swift */,
-				B227D09F22BBD93A00AA0634 /* LogInDataSource.swift */,
-				B227D0A022BBD93A00AA0634 /* LogInViewController.swift */,
-			);
-			name = "Log In";
-			sourceTree = "<group>";
-		};
-		B227D09622BBD91B00AA0634 /* Sign In */ = {
-			isa = PBXGroup;
-			children = (
-				B2C1A02B22C2866C00C5634C /* LaunchViewController.swift */,
-			);
-			name = "Sign In";
-			sourceTree = "<group>";
-		};
 		B227D0AC22BBE5E900AA0634 /* Counselor */ = {
 			isa = PBXGroup;
 			children = (
 				B227D0AA22BBE58200AA0634 /* CounselorViewController.swift */,
-				B227D0B922BBF48200AA0634 /* CounselorDataSource.swift */,
 			);
 			name = Counselor;
 			sourceTree = "<group>";
@@ -291,7 +325,7 @@
 		B227D0AD22BBEABD00AA0634 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				B227D0AE22BBEAE000AA0634 /* EventsViewController.swift */,
+				B28E066B22C3AC270035A40F /* EventsTableViewController.swift */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -300,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				B227D0B122BBEB0600AA0634 /* ProfileViewController.swift */,
+				B2B44D9E232697DC00FC1498 /* EditProfileViewController.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -320,20 +355,22 @@
 			name = Questions;
 			sourceTree = "<group>";
 		};
+		B2760A0222CA947100A122F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2760A0322CA949800A122F7 /* ResourcesTableViewController.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B2C19FFB22BD40DF00C5634C /* Check-In */ = {
 			isa = PBXGroup;
 			children = (
-				B2C19FFC22BD411200C5634C /* CheckInViewController.swift */,
+				B2679AB822D63CCC003CCA27 /* CheckInTableViewController.swift */,
+				B2B44D8D231031BE00FC1498 /* EventDetailViewController.swift */,
+				B2B44D8B23102E0C00FC1498 /* EventsDataSource.swift */,
 			);
 			name = "Check-In";
-			sourceTree = "<group>";
-		};
-		B2C1A00422BD5D3E00C5634C /* Pass */ = {
-			isa = PBXGroup;
-			children = (
-				B2C1A00222BD5D2600C5634C /* pass.json */,
-			);
-			name = Pass;
 			sourceTree = "<group>";
 		};
 		B2C1A01522C24FF700C5634C /* Homepage */ = {
@@ -347,9 +384,17 @@
 		B2C1A02222C27B1000C5634C /* College of Charleston Photos */ = {
 			isa = PBXGroup;
 			children = (
+				B23C492422D3D9F800A88C48 /* cistern.jpg */,
+				B2211D4022F868DB00D127DB /* clyde-pineapples.jpg */,
+				B2211D3C22F8635100D127DB /* clydeWantsToKnow.png */,
+				B2211D3E22F868D700D127DB /* clyde.jpg */,
+				B2D8013522D78D0D0050E376 /* F.png */,
+				B2B44D8F231053AB00FC1498 /* Clyde-Campus-Tour.jpg */,
 				B2C1A03722C2A00700C5634C /* cisternyard_splash.jpg */,
+				B28E066922C3A7C70035A40F /* 2016-Orientation-750x499.jpg */,
 				B2C1A03522C29B9B00C5634C /* Clyde-Cistern-profile.jpg */,
 				B2C1A03322C28D9900C5634C /* cofc-campusE.jpg */,
+				B2760A0522CA95B700A122F7 /* banner037.jpg */,
 				B2C1A01A22C25B9B00C5634C /* charleston.jpg */,
 				B2C1A01E22C2693B00C5634C /* cofc-orientation-1-750x499.jpg */,
 				B2C1A01322C15E8200C5634C /* Clyde-Cistern.jpg */,
@@ -363,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C1A02922C27C4200C5634C /* red-symbol.jpg */,
+				B2211D3A22F2018B00D127DB /* whiteLogo.png */,
 				B2C1A02722C27BAE00C5634C /* full-logo.jpg */,
 				B227D07E22BBD87600AA0634 /* cofc-red.jpg */,
 				B227D07B22BBD87600AA0634 /* white-logo.png */,
@@ -376,15 +422,26 @@
 				B227D07D22BBD87600AA0634 /* 3844408-48.png */,
 				B2C1A02622C27B8B00C5634C /* three-dots.png */,
 				B2C19FF322BC17E300C5634C /* images.png */,
+				B2D8013E22D8FC430050E376 /* instagram.png */,
+				B2760A0022CA8FD200A122F7 /* icons8-Org Unit.png */,
+				B28E066522C3A1EF0035A40F /* icons8-close-window-100.png */,
+				B28E066722C3A2670035A40F /* icons8-help-100.png */,
 				B2C19FF522BD338F00C5634C /* icons8-Details Popup.png */,
 				B227D08122BBD87600AA0634 /* icons8-FAQ.png */,
 				B2C19FF722BD34D200C5634C /* icons8-Maintenance.png */,
+				B26924862301E39500C480EF /* icons8-thumbs-up-100.png */,
 				B2C19FF922BD36AC00C5634C /* icons8-iOS Photos.png */,
+				B269248C2301E51300C480EF /* sideThumb.png */,
+				B269248A2301E4DB00C480EF /* thumbsDown.png */,
+				B28E066322C3A0FE0035A40F /* icons8-tick-box-100.png */,
 				B227D07F22BBD87600AA0634 /* icons8-Mind Map.png */,
 				B227D08322BBD87600AA0634 /* icons8-Online Support.png */,
+				B2D8013722D7A6800050E376 /* icons8-Installing Updates.png */,
 				B227D07C22BBD87600AA0634 /* icons8-Thumbnails.png */,
+				B2358DD722CFAFDE00E00348 /* icons8-Logout Rounded.png */,
 				B227D08022BBD87600AA0634 /* icons8-User Manual.png */,
 				B227D08222BBD87600AA0634 /* icons8-Vertical Settings Mixer.png */,
+				B23C492222D3D75500A88C48 /* cal.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -395,6 +452,14 @@
 				B2C1A03922C395DA00C5634C /* accounting.jpg */,
 			);
 			name = Majors;
+			sourceTree = "<group>";
+		};
+		B2D8013922D7A8010050E376 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				B2D8013A22D7A8250050E376 /* GamesViewController.swift */,
+			);
+			name = Games;
 			sourceTree = "<group>";
 		};
 		DDFDDF0A29E4BDD114B51BBC /* Pods */ = {
@@ -441,8 +506,12 @@
 					4FD6C4731B754AF1002F9F90 = {
 						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 						};
@@ -451,10 +520,9 @@
 			};
 			buildConfigurationList = 4FD6C46F1B754AF1002F9F90 /* Build configuration list for PBXProject "clyde" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -473,11 +541,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28847542329766200811638 /* usersyncs.json in Resources */,
+				B28847552329766200811638 /* userstore.json in Resources */,
 				B2C1A01222C15A7A00C5634C /* acaslonpro-semibolditalic.otf in Resources */,
 				B2C1A03822C2A00700C5634C /* cisternyard_splash.jpg in Resources */,
+				B23C492522D3D9F800A88C48 /* cistern.jpg in Resources */,
 				B2C1A01F22C2693C00C5634C /* cofc-orientation-1-750x499.jpg in Resources */,
 				B227D08622BBD87600AA0634 /* 3844408-48.png in Resources */,
+				B2760A0622CA95B700A122F7 /* banner037.jpg in Resources */,
 				B227D08922BBD87600AA0634 /* icons8-User Manual.png in Resources */,
+				B2D8013822D7A6810050E376 /* icons8-Installing Updates.png in Resources */,
+				B2211D3D22F8635200D127DB /* clydeWantsToKnow.png in Resources */,
+				B23C492322D3D75600A88C48 /* cal.png in Resources */,
+				B269248D2301E51400C480EF /* sideThumb.png in Resources */,
+				B2211D3F22F868D700D127DB /* clyde.jpg in Resources */,
+				B2D8013F22D8FC430050E376 /* instagram.png in Resources */,
 				B2C1A01022C15A7A00C5634C /* acaslonpro-regular.otf in Resources */,
 				B2C1A01122C15A7A00C5634C /* acaslonpro-semibold.otf in Resources */,
 				B2C1A02122C27A8B00C5634C /* cofc-campus.jpg in Resources */,
@@ -486,24 +564,35 @@
 				CEA8CA041F071B2300448B51 /* Images.xcassets in Resources */,
 				B227D08A22BBD87600AA0634 /* icons8-FAQ.png in Resources */,
 				B2C1A03A22C395DB00C5634C /* accounting.jpg in Resources */,
+				B2211D4122F868DC00D127DB /* clyde-pineapples.jpg in Resources */,
 				B2C1A01D22C2682200C5634C /* basketball.jpg in Resources */,
 				B227D08822BBD87600AA0634 /* icons8-Mind Map.png in Resources */,
+				B2B44D90231053AC00FC1498 /* Clyde-Campus-Tour.jpg in Resources */,
+				B269248B2301E4DB00C480EF /* thumbsDown.png in Resources */,
 				B7168FBC1FACC6F900A48DB5 /* LaunchScreen.storyboard in Resources */,
 				B2C1A01422C15E8300C5634C /* Clyde-Cistern.jpg in Resources */,
 				B2C1A00F22C15A7A00C5634C /* acaslonpro-italic.otf in Resources */,
 				B2C1A00E22C15A7A00C5634C /* acaslonpro-bolditalic.otf in Resources */,
 				B2C1A02822C27BAE00C5634C /* full-logo.jpg in Resources */,
+				B26924872301E39500C480EF /* icons8-thumbs-up-100.png in Resources */,
+				B2211D3B22F2018B00D127DB /* whiteLogo.png in Resources */,
 				B227D08522BBD87600AA0634 /* icons8-Thumbnails.png in Resources */,
 				B2C19FFA22BD36AC00C5634C /* icons8-iOS Photos.png in Resources */,
+				B28E066822C3A2680035A40F /* icons8-help-100.png in Resources */,
+				B2D8013622D78D0D0050E376 /* F.png in Resources */,
 				B227D08C22BBD87600AA0634 /* icons8-Online Support.png in Resources */,
+				B28E066622C3A1EF0035A40F /* icons8-close-window-100.png in Resources */,
 				B2C1A03422C28D9A00C5634C /* cofc-campusE.jpg in Resources */,
+				B2358DD822CFAFDF00E00348 /* icons8-Logout Rounded.png in Resources */,
+				B2760A0122CA8FD400A122F7 /* icons8-Org Unit.png in Resources */,
 				B227D08722BBD87600AA0634 /* cofc-red.jpg in Resources */,
+				B28E066A22C3A7C80035A40F /* 2016-Orientation-750x499.jpg in Resources */,
 				B2C1A02A22C27C4200C5634C /* red-symbol.jpg in Resources */,
 				B2C19FF422BC17E400C5634C /* images.png in Resources */,
 				B2C1A03622C29B9B00C5634C /* Clyde-Cistern-profile.jpg in Resources */,
 				B2C1A01B22C25B9C00C5634C /* charleston.jpg in Resources */,
 				B227D08B22BBD87600AA0634 /* icons8-Vertical Settings Mixer.png in Resources */,
-				B2C1A00322BD5D2600C5634C /* pass.json in Resources */,
+				B28E066422C3A0FE0035A40F /* icons8-tick-box-100.png in Resources */,
 				B2C19FF822BD34D300C5634C /* icons8-Maintenance.png in Resources */,
 				B2C19FF622BD338F00C5634C /* icons8-Details Popup.png in Resources */,
 				B2C1A00D22C15A7600C5634C /* acaslonpro-bold.otf in Resources */,
@@ -526,8 +615,10 @@
 				"${BUILT_PRODUCTS_DIR}/SalesforceAnalytics/SalesforceAnalytics.framework",
 				"${BUILT_PRODUCTS_DIR}/SalesforceSDKCommon/SalesforceSDKCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/SalesforceSDKCore/SalesforceSDKCore.framework",
+				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SmartStore/SmartStore.framework",
 				"${BUILT_PRODUCTS_DIR}/SmartSync/SmartSync.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -536,8 +627,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesforceAnalytics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesforceSDKCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesforceSDKCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartStore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartSync.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -569,26 +662,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27609FF22CA4FD400A122F7 /* user.swift in Sources */,
+				B2211D4422F872F800D127DB /* InfoPopUpViewController.swift in Sources */,
 				B227D0A922BBD94500AA0634 /* SlideInTableViewController.swift in Sources */,
-				B2C19FFD22BD411200C5634C /* CheckInViewController.swift in Sources */,
+				B2760A0422CA949800A122F7 /* ResourcesTableViewController.swift in Sources */,
+				B2D8013B22D7A8250050E376 /* GamesViewController.swift in Sources */,
 				B227D0AB22BBE58200AA0634 /* CounselorViewController.swift in Sources */,
-				B227D09E22BBD92F00AA0634 /* UIView.swift in Sources */,
-				B227D0A122BBD93A00AA0634 /* LogInDataSource.swift in Sources */,
 				4FD6C47A1B754AF1002F9F90 /* AppDelegate.swift in Sources */,
-				B227D09D22BBD92F00AA0634 /* SignUpViewController.swift in Sources */,
 				B227D0B222BBEB0600AA0634 /* ProfileViewController.swift in Sources */,
+				B2B44D9F232697DC00FC1498 /* EditProfileViewController.swift in Sources */,
+				B2B44D8C23102E0C00FC1498 /* EventsDataSource.swift in Sources */,
 				B227D0A722BBD94500AA0634 /* ViewController.swift in Sources */,
-				B227D09C22BBD92F00AA0634 /* SignUpExtension.swift in Sources */,
 				B227D0B522BBEB9A00AA0634 /* MajorsViewController.swift in Sources */,
-				B2C1A02C22C2866C00C5634C /* LaunchViewController.swift in Sources */,
 				4F393A291C3C8BCD00B3EA13 /* main.swift in Sources */,
-				B227D09B22BBD92F00AA0634 /* RestClient + Student.swift in Sources */,
-				B227D0A222BBD93A00AA0634 /* LogInViewController.swift in Sources */,
+				B2B44D8E231031BF00FC1498 /* EventDetailViewController.swift in Sources */,
+				B2D8013D22D8F9230050E376 /* extensions.swift in Sources */,
 				B227D0B822BBEC2100AA0634 /* QuestionsViewController.swift in Sources */,
-				4FD6C4A01B755242002F9F90 /* InitialViewController.swift in Sources */,
 				B227D0A822BBD94500AA0634 /* SWRevealViewController.m in Sources */,
-				B227D0AF22BBEAE000AA0634 /* EventsViewController.swift in Sources */,
-				B227D0BA22BBF48200AA0634 /* CounselorDataSource.swift in Sources */,
+				B28E066C22C3AC270035A40F /* EventsTableViewController.swift in Sources */,
+				B2679AB922D63CCC003CCA27 /* CheckInTableViewController.swift in Sources */,
+				B230DD4522EA04E7005674B4 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,13 +801,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = clyde/clyde.entitlements;
-				DEVELOPMENT_TEAM = 39Z2QRTVV2;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947MFRS7RN;
 				INFOPLIST_FILE = clyde/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "-DSIGNPOST_ENABLED";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cofc.club.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cofc.clyde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "clyde/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -726,12 +821,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = clyde/clyde.entitlements;
-				DEVELOPMENT_TEAM = 39Z2QRTVV2;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947MFRS7RN;
 				INFOPLIST_FILE = clyde/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cofc.club.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cofc.clyde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "clyde/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};

@@ -8,6 +8,18 @@
 
 import UIKit
 
+
+class EventsTableView: UITableView, UITableViewDelegate{
+    
+    override func numberOfRows(inSection section: Int) -> Int {
+        return 3
+    }
+}
+
+
+
+
+
 class EventsViewController: UIViewController {
 
     @IBOutlet weak var menuBarButton: UIBarButtonItem!

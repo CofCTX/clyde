@@ -27,6 +27,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var alreadyHaveAnAccount: UIButton!
+    
+    //Presents the login page
     @IBAction func SegueToLogIn(_ sender: UIButton) {
         performSegue(withIdentifier: "SegueToLogIn", sender: self)
     }
@@ -43,7 +45,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     var contactID: String!
     
   
-    
+    //Creates a date picker object for the birthday field
     private func showDatePicker(){
         //formats date
         datePicker.datePickerMode = .date
@@ -64,6 +66,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    //Determines when the user stops editing the date picker
     @objc func doneDatePicker(){
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -71,10 +74,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    //Ends editing of the date picker
     @objc func cancelDatePicker(){
         self.view.endEditing(true)
     }
     
+    //Determines whether the user successfully entered certain fields and then presents the confirm email page. At the moment, the highschoolid is hard coded for one school, this will need to be changed to allow for multiple schools.
     @IBAction func SignUpIsPressed(_ sender: Any) {
         if password != nil{
             print("Good to go.")
@@ -97,29 +102,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        print("Editing is about to begin")
-        return true
-    }
-    
-    
+  
+    //Changes the background color and text color when the user starts typing in the textfield
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         textField.textColor = #colorLiteral(red: 0.558098033, green: 0.1014547695, blue: 0.1667655639, alpha: 1)
-        print("Editing began")
     }
-    
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        print("Editing is about to end")
-        return true
-    }
-    
+
+    //Changes the background color when the user finishes typing in the textfield.
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("Editing ended")
         textField.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
-        print(textField.text ?? "wELP")
     }
     
+    //Returns textfield's value
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -137,12 +132,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         birthday.delegate = self
         startTerm.delegate = self
         showDatePicker()
- 
-
-        // Do any additional setup after loading the view.
     }
-    
-    
 }
 
 

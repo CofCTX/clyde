@@ -15,7 +15,7 @@ extension SignUpViewController{
    
     
  
-
+    //Error handler
     private func handleError(_ error: Error?, urlResponse: URLResponse? = nil){
         let errorDescription: String
         if let error = error {
@@ -52,6 +52,7 @@ extension SignUpViewController{
     private func createAccount(){
         print("Creating contact")
        
+        //Creates a "record" and adds fields to it
         var record = [String: Any]()
         record["LastName"] = lastName
         record["FirstName"] = firstName
@@ -64,14 +65,14 @@ extension SignUpViewController{
         record["TGTX_Master_Start_Term_and_Year__c"] = startTerm.text
         print("Requesting upsert")
         
+        //Creates a request to upsert(creates or updates ObjectType)
         let upsertRequest = RestClient.shared.requestForUpsert(withObjectType: "Contact", externalIdField: "Id", externalId: nil, fields: record)
         print("Upsert Request Made")
         
+        //Sends upsert request to Salesforce
         RestClient.shared.send(request: upsertRequest, onFailure: { (error, URLResponse) in
             SalesforceLogger.d(type(of: self), message: "Error invoking: \(error ?? "oh no" as! Error)")
             self.unwindToStart()
-
-            
         }){(response, URLResponse) in
             os_log("\nSuccessful response received")
             self.segueNext()
@@ -86,7 +87,11 @@ extension SignUpViewController{
     func createUser( ){
         let formatName = "'\(name.text ?? "")'"
         var formatContact: String = ""
+        
+        //Creates a request for a soql query to get the user's id
         let request = RestClient.shared.request(forQuery: "SELECT Id FROM Contact WHERE Name = \(formatName)")
+        
+        //Sends soql request and saves the response in the appropriate variables
         RestClient.shared.send(request: request, onFailure: { (error, urlResponse) in
             SalesforceLogger.d(type(of:self), message:"Error invoking: \(request)")
         }) { [weak self] (response, urlResponse) in
@@ -98,7 +103,7 @@ extension SignUpViewController{
                         formatContact = "\(formatContact)"
                         self?.contactID = formatContact
                         
-        
+                        //Creates a new record and stores the appropriate fields.
                         var record = [String: Any]()
                         record["LastName"] = self!.lastName
                         record["FirstName"] = self!.firstName
@@ -111,33 +116,37 @@ extension SignUpViewController{
                         record["LanguageLocaleKey"] = "en_US"
                         record["ContactId"] = formatContact
                         record["EmailEncodingKey"] = "ISO-8859-1"
-        
+                        
+                        
+                        //Creates an upsert request to create/update the user with the matching Id
                         let upsertRequest = RestClient.shared.requestForUpsert(withObjectType: "User", externalIdField: "Id", externalId: nil, fields: record)
         
                         print("Request Made")
         
-                        RestClient.shared.send(request: upsertRequest, onFailure: { (error, URLResponse) in
-                            
-                            
+                        //Sends the upsert request
+                        RestClient.shared.send(request: upsertRequest, onFailure: { (error, URLResponse) in   
                         }){(response, URLResponse) in
-                            os_log("\nSuccessful response received")    }
-                    
+                            os_log("\nSuccessful response received")
+                        }
                     }
-                }}}}
+                }
+            }
+        }
+    }
     
-    //Segue
+    //Presents homepage
      private func unwindToStart(){
         wasSubmitted = true
         DispatchQueue.main.async{
             self.performSegue(withIdentifier: "unwindToMain", sender: self)
         }
     }
-    //Segue
+    
+    //Presents confirm email page
      func segueNext(){
         wasSubmitted = true
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "SegueToConfirmEmail", sender: self)
-
         }
     }
 }

@@ -24,8 +24,10 @@ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
 
 import Foundation
 import UIKit
+import SalesforceSDKCore
 
 class InitialViewController : UIViewController {
+    
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -34,18 +36,20 @@ class InitialViewController : UIViewController {
         
     }
     
+    //Presents the log in view.
     @IBAction func logIn(_ sender: UIButton) {
         print("Logging in")
         performSegue(withIdentifier: "SegueToLogIn", sender: self)
         
     }
     
+    //Presents the sign up view.
     @IBAction func signUp(_ sender: UIButton) {
         print("Signing up")
         performSegue(withIdentifier: "SegueToSignUp", sender: self)
     }
     
-    
+    //
     @IBAction func unwindToMain(segue: UIStoryboardSegue){}
     
 
